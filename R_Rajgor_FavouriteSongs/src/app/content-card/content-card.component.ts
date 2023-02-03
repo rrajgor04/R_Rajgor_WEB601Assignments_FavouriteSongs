@@ -11,7 +11,7 @@ export class ContentCardComponent {
   contentList: ContentList;
 
   constructor(){
-    this.contentList = new ContentList();
+    this.contentList = new ContentList(); 
 
     this.contentList.add({id: 0,
       title: "Call Out My Name",
