@@ -1,1 +1,7 @@
-<p>content-list works!</p>
+<div *ngFor="let content of contents | slice: 0:5">
+    <h1>{{ content.title }}</h1>
+    <img [src]="content.imgURL" [alt]="content.title">
+    <p>{{content.description}}</p>
+    <p>Creater: {{ content.creator}}</p>
+    <p>Type: {{ content.type}}</p>
+</div>
