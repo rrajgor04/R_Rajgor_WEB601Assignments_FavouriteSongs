@@ -40,7 +40,7 @@ export class ContentListComponent {
         title: "Everyone dies in their nightmare",
         description: "Everybody Dies in Their Nightmares is a song by American rapper XXXTentacion from his debut studio album 17 (2017). It was produced by Potsu.",
         creator: "Jahseh Onfroy ,Ciara Nicole Simms",
-        imgURL: "2wCEAAoHCBUVFBcVFBUYGBcaGxsaGhobGx0bHRsaHRsbGhsgGhsdICwkGyApHhsaJjYlKS4wMzMzGiI5PjkyPSwyMzABCwsLEA4QGhESHTQgICAyMjIyMjIwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyPT0yMjI9PTIwMP",
+        imgURL:"https://i1.sndcdn.com/artworks-ge8lkaClvVOtTLL2-J1uYZQ-t500x500.jpg",
         type: "Hip-Hop"  
       },
 
@@ -49,7 +49,7 @@ export class ContentListComponent {
         title: "Perfect",
         description: "Perfect is a song by English singer-songwriter Ed Sheeran from his third studio album,2017. After the album's release, it charted at number four on the UK Singles Chart.On 21 August 2017, Billboard announced that Perfect would be the fourth single from the album.The song was serviced to pop radio on 26 September 2017 as the third single from the album in the United States (fourth overall).Originally peaking at number four in March 2017, the song re-entered the UK charts later that year.",
         creator: "Ed Sheeran ,Will Hicks",
-        imgURL: "https://pics.filmaffinity.com/Ed_Sheeran_Perfect_Music_Video-262499921-large.jpg",
+        imgURL: "https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg",
         type: "Romantic"
       }, 
       {
