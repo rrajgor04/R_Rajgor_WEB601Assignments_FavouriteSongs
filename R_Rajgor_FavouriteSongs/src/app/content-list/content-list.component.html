@@ -1,7 +1,8 @@
 <div *ngFor="let content of contents | slice: 0:5" class="content-card">
     <h1>{{ content.title }}</h1>
-    <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+    <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
     <p>{{content.description}}</p>
     <p>Creater: {{ content.creator}}</p>
-    <p>Type: {{ content.type}}</p>
+    <p *ngIf="content.type" >Type: {{ content.type}}</p>
+    <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
 </div>
