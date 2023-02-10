@@ -1,0 +1,13 @@
+.content-card{
+    border: 1px solid black;
+    padding: 12px;
+    margin: 12px 0px;
+    
+    &:first-child{
+        border: 2px solid black;
+    }
+
+    img{
+        width: 500px;
+    }
+}
