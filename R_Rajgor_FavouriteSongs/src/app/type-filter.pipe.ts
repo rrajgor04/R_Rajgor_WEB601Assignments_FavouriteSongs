@@ -6,7 +6,7 @@ import { Content } from './helper-files/content-interface';
 })
 export class TypeFilterPipe implements PipeTransform {
 
-  transform(contents: Content[], typeFilter: string): Content[] {
+  transform(contents: Content[], typeFilter?: string): Content[] {
     if(!typeFilter){
       return contents.filter(content => !content.type);
     }

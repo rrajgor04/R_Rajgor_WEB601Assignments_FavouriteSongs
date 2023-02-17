@@ -1,8 +1,51 @@
-<div *ngFor="let content of contents | slice: 0:5" class="content-card">
-    <h1>{{ content.title }}</h1>
-    <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
-    <p>{{content.description}}</p>
-    <p>Creater: {{ content.creator}}</p>
-    <p *ngIf="content.type" >Type: {{ content.type}}</p>
-    <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+
+<div>
+    <h1>Alternative R&B Type</h1>
+    <div *ngFor="let content of contents | typeFilter:'Alternative R&B'" class="content-card">
+        <h1>{{ content.title }}</h1>
+        <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+        <p>{{content.description}}</p>
+        <p>Creater: {{ content.creator}}</p>
+        <p *ngIf="content.type" >Type: {{ content.type}}</p>
+        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+    </div>
+</div>
+
+
+<div>
+    <h1>Pop Type</h1>
+    <div *ngFor="let content of contents | typeFilter:'Pop'" class="content-card">
+        <h1>{{ content.title }}</h1>
+        <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+        <p>{{content.description}}</p>
+        <p>Creater: {{ content.creator}}</p>
+        <p *ngIf="content.type" >Type: {{ content.type}}</p>
+        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+    </div>
+</div>
+
+
+<div>
+    <h1>Hip-Hop Type</h1>
+    <div *ngFor="let content of contents | typeFilter:'Hip-Hop'" class="content-card">
+        <h1>{{ content.title }}</h1>
+        <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+        <p>{{content.description}}</p>
+        <p>Creater: {{ content.creator}}</p>
+        <p *ngIf="content.type" >Type: {{ content.type}}</p>
+        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+    </div>
+</div>
+
+
+<div>
+    <h1>Without Type</h1>
+    <div *ngFor="let content of contents | typeFilter" class="content-card">
+        <h1>{{ content.title }}</h1>
+        <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+        <p>{{content.description}}</p>
+        <p>Creater: {{ content.creator}}</p>
+        <p *ngIf="content.type" >Type: {{ content.type}}</p>
+        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+    </div>
 </div>

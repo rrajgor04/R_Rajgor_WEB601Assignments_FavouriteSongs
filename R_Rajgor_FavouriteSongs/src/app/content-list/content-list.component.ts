@@ -31,15 +31,14 @@ export class ContentListComponent {
         description: "Jimmy Cooks is a song by Canadian rapper Drake featuring Atlanta-based rapper 21 Savage. It was released on June 17, 2022, from Drake's seventh studio album Honestly, Nevermind. The song is the only track from the album to have a guest appearance, and was dubbed a standout track by HotNewHipHop.Four months prior to its official release as a single, Jimmy Cooks debuted at number one on the US Billboard Hot 100, becoming Drakes eleventh and 21 Savages second number-one hit on the chart. Later, the song impacted contemporary hit radio on October 11, as the album's third single.",
         creator: "Drake, 21 Savage",
         imgURL: "https://i1.sndcdn.com/artworks-nmiV5MTSfGSS-0-t500x500.jpg",
-        type: "Hip-Hop, trap"    
+        type: "Hip-Hop"    
       },
       {
         id: 2,
         title: "Believer",
         description: "Believer is a song by American rock band Imagine Dragons. The song was released on February 1, 2017, through Interscope Records and Kidinakorner as the lead single from the band's third studio album, Evolve (2017). It was written by Dan Reynolds, Wayne Sermon, Ben McKee, Daniel Platzman, Justin Tranter and its producers Mattman & Robin.",
         creator: "Dan Reynolds, Wayne Sermon Ben McKee, Daniel Platzman, Robin Fredriksson, Mattias Larsson, Justin Tranter",
-        imgURL: "https://slm-assets.secondlife.com/assets/16977531/view_large/Believer_Imagine_Dragons.jpg?1492789733",
-        type: "Arena rock, pop rock"    
+        imgURL: "https://slm-assets.secondlife.com/assets/16977531/view_large/Believer_Imagine_Dragons.jpg?1492789733",   
       },
       {     
       id: 3,
@@ -81,7 +80,7 @@ export class ContentListComponent {
         description: "Six Feet Under is a song by Canadian singer The Weeknd, from his third studio album Starboy (2016). It features additional vocals from American rapper Future and was written by both artists alongside Belly, DaHeala, Doc McKinney, Ben Billions, Metro Boomin, and Cirkut.",
         creator: "Abel Tesfaye,Nayvadius Wilburn",
         imgURL: "https://i1.sndcdn.com/artworks-000457019874-aoo2hc-t500x500.jpg",
-        type: "Alternative R&B ,  pop"
+        type: "Alternative R&B"
       }
 
     ];
