@@ -1,7 +1,7 @@
 
 <div>
     <h1>Alternative R&B Type</h1>
-    <div *ngFor="let content of contents | typeFilter:'Alternative R&B'" class="content-card">
+    <div *ngFor="let content of contents | typeFilter:'Alternative R&B'" class="content-card Alternative">
         <h1>{{ content.title }}</h1>
         <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
         <p>{{content.description}}</p>
@@ -14,7 +14,7 @@
 
 <div>
     <h1>Pop Type</h1>
-    <div *ngFor="let content of contents | typeFilter:'Pop'" class="content-card">
+    <div *ngFor="let content of contents | typeFilter:'Pop'" class="content-card Pop">
         <h1>{{ content.title }}</h1>
         <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
         <p>{{content.description}}</p>
@@ -27,7 +27,7 @@
 
 <div>
     <h1>Hip-Hop Type</h1>
-    <div *ngFor="let content of contents | typeFilter:'Hip-Hop'" class="content-card">
+    <div *ngFor="let content of contents | typeFilter:'Hip-Hop'" class="content-card Hip-Hop">
         <h1>{{ content.title }}</h1>
         <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
         <p>{{content.description}}</p>
@@ -40,7 +40,7 @@
 
 <div>
     <h1>Without Type</h1>
-    <div *ngFor="let content of contents | typeFilter" class="content-card">
+    <div *ngFor="let content of contents | typeFilter" class="content-card noType">
         <h1>{{ content.title }}</h1>
         <img *ngIf="content.imgURL" [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
         <p>{{content.description}}</p>
