@@ -1,3 +1,15 @@
+<div class="searchArea">
+    <div class="input">
+        <input type="text" [(ngModel)]="title" placeholder="Search Title...">
+        <button (click)="searchForTitle()">Search</button>
+    </div>
+
+    <div class="output" *ngIf="isTitleExists !== null">
+        <p [style.color]="isTitleExists ? 'green' : 'red'">
+            {{isTitleExists ? 'Title exist' : 'No title exists'}}
+        </p>
+    </div>
+</div>
 
 <div>
     <h1>Alternative R&B Type</h1>

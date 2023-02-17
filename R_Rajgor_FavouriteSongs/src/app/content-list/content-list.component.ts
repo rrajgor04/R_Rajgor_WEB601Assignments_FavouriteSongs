@@ -9,10 +9,16 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentListComponent {
   contents: Content[];
+  title: string = '';
+  isTitleExists: boolean | null = null;
 
   loggingIDnTitle(content: any){
     console.log(`ID: ${content.id}`);
     console.log(`Title: ${content.title}`);
+  }
+
+  searchForTitle(){
+    this.isTitleExists = this.contents.some(content => content.title === this.title);
   }
 
   constructor(){
@@ -68,7 +74,7 @@ export class ContentListComponent {
 
       {
         id:6 ,
-        title: "I wwas never there ",
+        title: "I wwas never there",
         description: "I Was Never There is a song recorded by Canadian singer the Weeknd featuring French DJ Gesaffelstein, taken from Tesfayes first EP, My Dear Melancholy, released on March 30, 2018.",
         creator: "Abel Tesfaye, Gesaffelstein, Adam Feeney",
         imgURL: "https://64.media.tumblr.com/228dd75bb87a6bd80d47a3317a8886a4/tumblr_p6dws9nCSX1vydj00o2_500.png",
@@ -76,7 +82,7 @@ export class ContentListComponent {
       },
     {
       id:7  ,
-        title: "Six feet under ",
+        title: "Six feet under",
         description: "Six Feet Under is a song by Canadian singer The Weeknd, from his third studio album Starboy (2016). It features additional vocals from American rapper Future and was written by both artists alongside Belly, DaHeala, Doc McKinney, Ben Billions, Metro Boomin, and Cirkut.",
         creator: "Abel Tesfaye,Nayvadius Wilburn",
         imgURL: "https://i1.sndcdn.com/artworks-000457019874-aoo2hc-t500x500.jpg",
