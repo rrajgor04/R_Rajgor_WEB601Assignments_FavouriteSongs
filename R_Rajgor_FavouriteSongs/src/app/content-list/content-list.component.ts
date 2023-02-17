@@ -1,3 +1,4 @@
+import { keyframes } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 
@@ -64,8 +65,24 @@ export class ContentListComponent {
         creator: "Metro Boomin, the Weeknd and 21 Savage",
         imgURL: "https://i1.sndcdn.com/artworks-UdXgRYwFJi7utJJM-pGG8kA-t500x500.jpg",
         type: "Pop"
-      }
+      },
 
+      {
+        id:6 ,
+        title: "I wwas never there ",
+        description: "I Was Never There is a song recorded by Canadian singer the Weeknd featuring French DJ Gesaffelstein, taken from Tesfayes first EP, My Dear Melancholy, released on March 30, 2018.",
+        creator: "Abel Tesfaye, Gesaffelstein, Adam Feeney",
+        imgURL: "https://64.media.tumblr.com/228dd75bb87a6bd80d47a3317a8886a4/tumblr_p6dws9nCSX1vydj00o2_500.png",
+        type: "Alternative R&B"
+      },
+    {
+      id:7  ,
+        title: "Six feet under ",
+        description: "Six Feet Under is a song by Canadian singer The Weeknd, from his third studio album Starboy (2016). It features additional vocals from American rapper Future and was written by both artists alongside Belly, DaHeala, Doc McKinney, Ben Billions, Metro Boomin, and Cirkut.",
+        creator: "Abel Tesfaye,Nayvadius Wilburn",
+        imgURL: "https://i1.sndcdn.com/artworks-000457019874-aoo2hc-t500x500.jpg",
+        type: "Alternative R&B ,  pop"
+      }
 
     ];
   }
