@@ -9,6 +9,7 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentListComponent {
   contents: Content[];
+  defaultSongImage: string = 'https://cdn.saleminteractivemedia.com/shared/images/default-cover-art.png';
   title: string = '';
   isTitleExists: boolean | null = null;
 
@@ -36,7 +37,6 @@ export class ContentListComponent {
         title: "Jimmy Cooks",
         description: "Jimmy Cooks is a song by Canadian rapper Drake featuring Atlanta-based rapper 21 Savage. It was released on June 17, 2022, from Drake's seventh studio album Honestly, Nevermind. The song is the only track from the album to have a guest appearance, and was dubbed a standout track by HotNewHipHop.Four months prior to its official release as a single, Jimmy Cooks debuted at number one on the US Billboard Hot 100, becoming Drakes eleventh and 21 Savages second number-one hit on the chart. Later, the song impacted contemporary hit radio on October 11, as the album's third single.",
         creator: "Drake, 21 Savage",
-        imgURL: "https://i1.sndcdn.com/artworks-nmiV5MTSfGSS-0-t500x500.jpg",
         type: "Hip-Hop"    
       },
       {
@@ -60,7 +60,6 @@ export class ContentListComponent {
         title: "Perfect",
         description: "Perfect is a song by English singer-songwriter Ed Sheeran from his third studio album,2017. After the album's release, it charted at number four on the UK Singles Chart.On 21 August 2017, Billboard announced that Perfect would be the fourth single from the album.The song was serviced to pop radio on 26 September 2017 as the third single from the album in the United States (fourth overall).Originally peaking at number four in March 2017, the song re-entered the UK charts later that year.",
         creator: "Ed Sheeran ,Will Hicks",
-        imgURL: "https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg",
         type: "Romantic"
       }, 
       {
