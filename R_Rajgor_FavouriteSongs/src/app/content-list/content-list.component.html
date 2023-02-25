@@ -26,7 +26,12 @@
         <p>{{content.description}}</p>
         <p>Creater: {{ content.creator}}</p>
         <p *ngIf="content.type" appHoverAffect="underline"  >Type: {{ content.type}}</p>
-        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+
+        <div *ngIf="content.tags"><strong>Tags:</strong> 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
     </div>
 </div>
 
@@ -46,7 +51,11 @@
         <p>{{content.description}}</p>
         <p>Creater: {{ content.creator}}</p>
         <p *ngIf="content.type" appHoverAffect="underline" >Type: {{ content.type}}</p>
-        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+        <div *ngIf="content.tags"><strong>Tags:</strong> 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
     </div>
 </div>
 
@@ -66,7 +75,11 @@
         <p>{{content.description}}</p>
         <p>Creater: {{ content.creator}}</p>
         <p *ngIf="content.type" appHoverAffect="underline" >Type: {{ content.type}}</p>
-        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+        <div *ngIf="content.tags"><strong>Tags:</strong> 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
     </div>
 </div>
 
@@ -86,6 +99,10 @@
         <p>{{content.description}}</p>
         <p>Creater: {{ content.creator}}</p>
         <p *ngIf="content.type" appHoverAffect="underline" >Type: {{ content.type}}</p>
-        <p *ngIf="content.tags" >Tags: {{ content.tags}}</p>
+        <div *ngIf="content.tags"><strong>Tags:</strong> 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
     </div>
 </div>
