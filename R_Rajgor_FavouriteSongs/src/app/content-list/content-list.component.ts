@@ -52,7 +52,8 @@ export class ContentListComponent {
         description: "Everybody Dies in Their Nightmares is a song by American rapper XXXTentacion from his debut studio album 17 (2017). It was produced by Potsu.",
         creator: "Jahseh Onfroy ,Ciara Nicole Simms",
         imgURL:"https://i1.sndcdn.com/artworks-ge8lkaClvVOtTLL2-J1uYZQ-t500x500.jpg",
-        type: "Hip-Hop"  
+        type: "Hip-Hop" ,
+        tags: ["Jahseh Onfroy", "Hip Hop"] 
       },
 
       {
