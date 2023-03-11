@@ -1,1 +1,24 @@
+<div  class="content-card noType">
+    <h1>{{ topSongContent.title }}</h1>
+
+    <div *ngIf="topSongContent.imgURL; else defaultImage">
+        <img [src]="topSongContent.imgURL" [alt]="topSongContent.title" (click)="loggingIDnTitle(topSongContent)">
+    </div>
+    <ng-template #defaultImage>
+        <img [src]="defaultSongImage" [alt]="topSongContent.title" (click)="loggingIDnTitle(topSongContent)">
+    </ng-template>
+
+    <p>{{topSongContent.description}}</p>
+    <p>Creater: {{ topSongContent.creator}}</p>
+    <p *ngIf="topSongContent.type" appHoverAffect="underline"  >Type: {{ topSongContent.type}}</p>
+
+    <div *ngIf="topSongContent.tags"><strong>Tags:</strong> 
+        <span *ngFor="let tag of topSongContent.tags" appHoverAffect="bold">
+            {{tag}},
+        </span>
+    </div>
+</div>
+
 <app-content-list></app-content-list>
+
+<app-message></app-message>
