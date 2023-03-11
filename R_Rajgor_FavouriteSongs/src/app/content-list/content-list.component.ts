@@ -12,10 +12,27 @@ export class ContentListComponent {
   defaultSongImage: string = 'https://cdn.saleminteractivemedia.com/shared/images/default-cover-art.png';
   title: string = '';
   isTitleExists: boolean | null = null;
+  errTxt: boolean = false;
 
   loggingIDnTitle(content: any){
     console.log(`ID: ${content.id}`);
     console.log(`Title: ${content.title}`);
+  }
+
+  addContent(newContent: Content){
+    const AddPromise = new Promise((resolve, reject) => {
+      this.contents.push(newContent);
+      this.contents = [...this.contents];
+      resolve(newContent.title);
+    });
+
+    AddPromise.then(title => {
+      console.log(`Content Added successfully, Title: ${title}`);
+      this.errTxt = false;
+    }).catch(err => {
+      this.errTxt = true;
+    });
+    
   }
 
   searchForTitle(){
