@@ -18,6 +18,13 @@ export class ContentListComponent {
     console.log(`Title: ${content.title}`);
   }
 
+  addContent(content: Content){
+    this.SongService.addSong(content).subscribe(newSongBack => {
+      this.contents.push(newSongBack);
+      this.contents = [...this.contents];
+    })
+  }
+
   searchForTitle(){
     this.isTitleExists = this.contents.some(content => content.title === this.title);
   }
