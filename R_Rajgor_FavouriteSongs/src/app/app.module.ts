@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
+import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
     TypeFilterPipe,
     HoverAffectDirective,
     MessageComponent,
-    ModifyContentComponentComponent
+    ModifyContentComponentComponent,
+    AddContentDialogComponent
   ],
   imports: [
     BrowserModule,

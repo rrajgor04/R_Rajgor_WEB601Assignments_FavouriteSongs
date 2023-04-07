@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddContentDialogComponent } from '../add-content-dialog/add-content-dialog.component';
 import { Content } from '../helper-files/content-interface';
 
 @Component({
@@ -9,6 +11,19 @@ import { Content } from '../helper-files/content-interface';
 export class ModifyContentComponentComponent {
   newContent: any = {};
   @Output() onCreation = new EventEmitter<Content>();
+
+  constructor(public dialog: MatDialog){}
+
+  openContentDialog(){
+    const dialogRef = this.dialog.open(AddContentDialogComponent);
+
+    dialogRef.afterClosed().subscribe(newSong => {
+      if(newSong){
+        this.newContent = newSong;
+        this.addContent();
+      }
+    })
+  }
 
   addContent(){
     this.onCreation.emit(this.newContent);
