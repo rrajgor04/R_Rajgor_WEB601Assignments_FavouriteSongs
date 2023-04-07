@@ -17,11 +17,11 @@
         </p>
     </div>
 </div>
-
+<mat-divider></mat-divider>
 <div>
     <h1>Alternative R&B Type</h1>
-    <mat-card *ngFor="let content of contents | typeFilter:'Alternative R&B'" class="content-card Alternative">
-        <mat-card-header>
+    <mat-card  *ngFor="let content of contents | typeFilter:'Alternative R&B'" class="content-card Alternative">
+        <mat-card-header [matTooltip]="content.title">
             <h1 mat-card-title>{{ content.title }}</h1>
 
             <mat-card-subtitle>
@@ -47,12 +47,12 @@
         </mat-card-content>
     </mat-card>
 </div>
-
+<mat-divider></mat-divider>
 
 <div>
     <h1>Pop Type</h1>
     <mat-card *ngFor="let content of contents | typeFilter:'Pop'" class="content-card Pop">
-        <mat-card-header>
+        <mat-card-header [matTooltip]="content.title">
             <h1 mat-card-title>{{ content.title }}</h1>
 
             <mat-card-subtitle>
@@ -79,11 +79,11 @@
     </mat-card>
 </div>
 
-
+<mat-divider></mat-divider>
 <div>
     <h1>Hip-Hop Type</h1>
     <mat-card *ngFor="let content of contents | typeFilter:'Hip-Hop'" class="content-card Hip-Hop">
-        <mat-card-header>
+        <mat-card-header [matTooltip]="content.title">
             <h1 mat-card-title>{{ content.title }}</h1>
 
             <mat-card-subtitle>
@@ -110,11 +110,11 @@
     </mat-card>
 </div>
 
-
+<mat-divider></mat-divider>
 <div>
     <h1>Without Type</h1>
     <mat-card *ngFor="let content of contents | typeFilter" class="content-card noType">
-        <mat-card-header>
+        <mat-card-header [matTooltip]="content.title">
             <h1 mat-card-title>{{ content.title }}</h1>
 
             <mat-card-subtitle>
