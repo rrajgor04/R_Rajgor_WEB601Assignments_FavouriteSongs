@@ -1,23 +1,29 @@
-<div  class="content-card noType">
-    <h1>{{ topSongContent.title }}</h1>
+<mat-card  class="content-card noType">
+    <mat-card-header>
+        <h1 mat-card-title>{{ topSongContent.title }}</h1>
 
-    <div *ngIf="topSongContent.imgURL; else defaultImage">
-        <img [src]="topSongContent.imgURL" [alt]="topSongContent.title" (click)="loggingIDnTitle(topSongContent)">
-    </div>
-    <ng-template #defaultImage>
-        <img [src]="defaultSongImage" [alt]="topSongContent.title" (click)="loggingIDnTitle(topSongContent)">
-    </ng-template>
+        <mat-card-subtitle>
+            <div *ngIf="topSongContent.imgURL; else defaultImage">
+                <img [src]="topSongContent.imgURL" [alt]="topSongContent.title" (click)="loggingIDnTitle(topSongContent)">
+            </div>
+            <ng-template #defaultImage>
+                <img [src]="defaultSongImage" [alt]="topSongContent.title" (click)="loggingIDnTitle(topSongContent)">
+            </ng-template>
+        </mat-card-subtitle>
+    </mat-card-header>
 
-    <p>{{topSongContent.description}}</p>
-    <p>Creater: {{ topSongContent.creator}}</p>
-    <p *ngIf="topSongContent.type" appHoverAffect="underline"  >Type: {{ topSongContent.type}}</p>
+    <mat-card-content>
+        <p>{{topSongContent.description}}</p>
+        <p>Creater: {{ topSongContent.creator}}</p>
+        <p *ngIf="topSongContent.type" appHoverAffect="underline"  >Type: {{ topSongContent.type}}</p>
 
-    <div *ngIf="topSongContent.tags"><strong>Tags:</strong> 
-        <span *ngFor="let tag of topSongContent.tags" appHoverAffect="bold">
-            {{tag}},
-        </span>
-    </div>
-</div>
+        <div *ngIf="topSongContent.tags"><strong>Tags:</strong> 
+            <span *ngFor="let tag of topSongContent.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
+    </mat-card-content>
+</mat-card>
 
 <app-content-list></app-content-list>
 
