@@ -1,11 +1,41 @@
 <div>
-    Title: <br> <input type="text" [(ngModel)]="newContent.title"> <br> <br>
-    Description: <br> <input type="text" [(ngModel)]="newContent.description"> <br> <br>
-    Creator: <br> <input type="text" [(ngModel)]="newContent.creator"> <br> <br>
-    Image Link: <br> <input type="text" [(ngModel)]="newContent.imgURL"> <br> <br> 
-    Type: <br> <input type="text" [(ngModel)]="newContent.type"> <br> <br>
+    <mat-form-field>
+        <mat-label>ID:</mat-label>
+        <input matInput type="text" disabled="true">
+    </mat-form-field>
+    <br> <br>
 
+    <mat-form-field>
+        <mat-label>Title:</mat-label>
+        <input matInput type="text" [(ngModel)]="newContent.title">
+    </mat-form-field>
+    <br> <br>
+
+    <mat-form-field>
+        <mat-label>Description:</mat-label>
+        <input matInput type="text" [(ngModel)]="newContent.description"> 
+    </mat-form-field>
+    <br> <br>
+
+    <mat-form-field>
+        <mat-label>Creator</mat-label>
+        <input matInput type="text" [(ngModel)]="newContent.creator">
+    </mat-form-field>
+    <br> <br>
+
+    <mat-form-field>
+        <mat-label>Image Link:</mat-label>
+        <input matInput type="text" [(ngModel)]="newContent.imgURL">
+    </mat-form-field>
+    <br> <br>
+
+    <mat-form-field>
+        <mat-label>Type: </mat-label>
+        <input matInput type="text" [(ngModel)]="newContent.type">
+    </mat-form-field>
+    <br> <br>
+    
     <div>
-        <button (click)="addContent()">Add Content</button>
+        <button mat-raised-button color="primary" (click)="addContent()">Add Content</button>
     </div>
 </div>

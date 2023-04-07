@@ -4,8 +4,11 @@
 
 <div class="searchArea">
     <div class="input">
-        <input type="text" [(ngModel)]="title" placeholder="Search Title...">
-        <button (click)="searchForTitle()">Search</button>
+        <mat-form-field>
+            <mat-label>Search Title...</mat-label>
+            <input matInput type="text" [(ngModel)]="title">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="searchForTitle()">Search</button>
     </div>
 
     <div class="output" *ngIf="isTitleExists !== null">
