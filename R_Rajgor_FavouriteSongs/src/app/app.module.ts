@@ -25,6 +25,7 @@ import { AddContentDialogComponent } from './add-content-dialog/add-content-dial
 import { ContentDetailComponent } from './content-detail/content-detail.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AppRoutingModule } from './app-routing.module';
     MessageComponent,
     ModifyContentComponentComponent,
     AddContentDialogComponent,
-    ContentDetailComponent
+    ContentDetailComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
