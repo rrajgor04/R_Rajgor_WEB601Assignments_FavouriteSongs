@@ -11,14 +11,14 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '/list',
+    path: 'list',
     component: ContentListComponent
   },
   {
     path: 'list/:id',
     component: ContentDetailComponent
   }
-]
+];
 
 @NgModule({
   declarations: [],

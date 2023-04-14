@@ -22,16 +22,19 @@
     <h1>Alternative R&B Type</h1>
     <mat-card  *ngFor="let content of contents | typeFilter:'Alternative R&B'" class="content-card Alternative">
         <mat-card-header [matTooltip]="content.title">
-            <h1 mat-card-title>{{ content.title }}</h1>
-
-            <mat-card-subtitle>
-                <div *ngIf="content.imgURL; else defaultImage">
-                    <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </div>
-                <ng-template #defaultImage>
-                    <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </ng-template>
-            </mat-card-subtitle>
+            <a routerLink="/list/{{content.id}}">
+                
+                <h1 mat-card-title>{{ content.title }}</h1>
+                
+                <mat-card-subtitle>
+                    <div *ngIf="content.imgURL; else defaultImage">
+                        <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </div>
+                    <ng-template #defaultImage>
+                        <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </ng-template>
+                </mat-card-subtitle>
+            </a>
         </mat-card-header>
 
         <mat-card-content>
@@ -53,16 +56,19 @@
     <h1>Pop Type</h1>
     <mat-card *ngFor="let content of contents | typeFilter:'Pop'" class="content-card Pop">
         <mat-card-header [matTooltip]="content.title">
-            <h1 mat-card-title>{{ content.title }}</h1>
+            <a routerLink="/list/{{content.id}}">
 
-            <mat-card-subtitle>
-                <div *ngIf="content.imgURL; else defaultImage">
-                    <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </div>
-                <ng-template #defaultImage>
-                    <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </ng-template>
-            </mat-card-subtitle>
+                <h1 mat-card-title>{{ content.title }}</h1>
+                
+                <mat-card-subtitle>
+                    <div *ngIf="content.imgURL; else defaultImage">
+                        <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </div>
+                    <ng-template #defaultImage>
+                        <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </ng-template>
+                </mat-card-subtitle>
+            </a>
         </mat-card-header>
 
         <mat-card-content>
@@ -84,16 +90,19 @@
     <h1>Hip-Hop Type</h1>
     <mat-card *ngFor="let content of contents | typeFilter:'Hip-Hop'" class="content-card Hip-Hop">
         <mat-card-header [matTooltip]="content.title">
-            <h1 mat-card-title>{{ content.title }}</h1>
+            <a routerLink="/list/{{content.id}}">
 
-            <mat-card-subtitle>
-                <div *ngIf="content.imgURL; else defaultImage">
-                    <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </div>
-                <ng-template #defaultImage>
-                    <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </ng-template>
-            </mat-card-subtitle>
+                <h1 mat-card-title>{{ content.title }}</h1>
+                
+                <mat-card-subtitle>
+                    <div *ngIf="content.imgURL; else defaultImage">
+                        <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </div>
+                    <ng-template #defaultImage>
+                        <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </ng-template>
+                </mat-card-subtitle>
+            </a>
         </mat-card-header>
 
         <mat-card-content>
@@ -115,16 +124,19 @@
     <h1>Without Type</h1>
     <mat-card *ngFor="let content of contents | typeFilter" class="content-card noType">
         <mat-card-header [matTooltip]="content.title">
-            <h1 mat-card-title>{{ content.title }}</h1>
+            <a routerLink="/list/{{content.id}}">
 
-            <mat-card-subtitle>
-                <div *ngIf="content.imgURL; else defaultImage">
-                    <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </div>
-                <ng-template #defaultImage>
-                    <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
-                </ng-template>
-            </mat-card-subtitle>
+                <h1 mat-card-title>{{ content.title }}</h1>
+                
+                <mat-card-subtitle>
+                    <div *ngIf="content.imgURL; else defaultImage">
+                        <img [src]="content.imgURL" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </div>
+                    <ng-template #defaultImage>
+                        <img [src]="defaultSongImage" [alt]="content.title" (click)="loggingIDnTitle(content)">
+                    </ng-template>
+                </mat-card-subtitle>
+            </a>
         </mat-card-header>
 
         <mat-card-content>
