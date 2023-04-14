@@ -22,6 +22,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { AddContentDialogComponent } from './add-content-dialog/add-content-dial
     HoverAffectDirective,
     MessageComponent,
     ModifyContentComponentComponent,
-    AddContentDialogComponent
+    AddContentDialogComponent,
+    ContentDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { AddContentDialogComponent } from './add-content-dialog/add-content-dial
       dataEncapsulation: false,
       delay: 1000
     }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
