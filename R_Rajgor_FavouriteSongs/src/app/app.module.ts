@@ -21,6 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
 import { ContentDetailComponent } from './content-detail/content-detail.component';
 
@@ -51,6 +52,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     MatCardModule,
     MatTooltipModule,
     MatDividerModule,
+    MatSnackBarModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
       delay: 1000
