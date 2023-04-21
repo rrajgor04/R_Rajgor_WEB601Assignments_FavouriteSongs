@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogUpdateService } from './log-update.service';
 import { SongService } from './services/song.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class AppComponent {
   defaultSongImage: string = 'https://cdn.saleminteractivemedia.com/shared/images/default-cover-art.png';
 
   
-  constructor(private SongService: SongService){}
+  constructor(private SongService: SongService, private logUpdateService: LogUpdateService){}
 
   loggingIDnTitle(content: any){
     console.log(`ID: ${content.id}`);
@@ -20,6 +21,7 @@ export class AppComponent {
   }
 
   ngOnInit(){
+    this.logUpdateService.init();
     this.SongService.getSongById(4).subscribe(content => this.topSongContent = content);
   }
 }
